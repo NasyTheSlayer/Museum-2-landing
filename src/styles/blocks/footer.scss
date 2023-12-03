@@ -94,6 +94,14 @@
     @include onTablet {
       padding-top: toRem(30);
     }
+
+    &--hover {
+      &:hover {
+        display: inline-block;
+
+        @include hover (transform, scale(1.1));
+      }
+    }
   }
 
   &__image {
@@ -147,6 +155,8 @@
   &__icon {
     width: toRem(30);
     height: toRem(30);
+
+    cursor: pointer;
   }
 
   &__title--padding {
