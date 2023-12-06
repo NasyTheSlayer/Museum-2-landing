@@ -52,7 +52,7 @@
     align-items: center;
     cursor: pointer;
 
-    width: 280px;
+    width: 100%;
 
     gap: toRem(8);
     height: 60px;
@@ -65,11 +65,12 @@
       grid-column: 5 / -1;
 
       margin-top: 0;
-      width: 100%;
+      width: toRem(210);
     }
 
     @include onDesktop {
       grid-column: 10 / -1;
+      width: toRem(270);
     }
 
     &:hover {
