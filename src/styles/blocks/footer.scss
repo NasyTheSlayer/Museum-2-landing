@@ -50,6 +50,7 @@
 
   &__terms {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: toRem(22);
     padding-top: toRem(60);
@@ -60,8 +61,6 @@
     @include contentPaddingInLine;
 
     @include onTablet {
-      justify-content: space-between;
-
       padding-top: toRem(62);
     }
 
